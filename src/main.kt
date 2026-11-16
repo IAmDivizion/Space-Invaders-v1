@@ -1,3 +1,4 @@
+// Feito por Francisco Castro 55098, Afonso Marques 55102 e Rodrigo Graca 55379
 // ponto de entrada do programa, gestao de eventos, e funcoes de desenho do jogo
 
 import pt.isel.canvas.*

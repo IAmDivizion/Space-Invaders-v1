@@ -1,3 +1,4 @@
+// Feito por Francisco Castro 55098, Afonso Marques 55102 e Rodrigo Graca 55379
 // Representa a nave do jogador e a sua posição horizontal.
 
 import pt.isel.canvas.*

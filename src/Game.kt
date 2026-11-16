@@ -1,3 +1,4 @@
+// Feito por Francisco Castro 55098, Afonso Marques 55102 e Rodrigo Graca 55379
 // Mantém e atualiza o estado do jogo.
 
 data class Game(
