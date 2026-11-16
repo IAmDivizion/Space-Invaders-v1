@@ -62,7 +62,7 @@ data class Game(
         if (over) return this
 
         // verifica se o disparo da nave colidiu com algum disparo alienigena
-        val shipShotHit = shipShot != null && alienShots.any { it.hitsShot(shipShot) }
+        val shipShotHit = shipShot != null && alienShots.filter { it.hitsShot(shipShot) }.isNotEmpty()
 
         // se colidiu, o disparo da nave desaparece
         val nextShipShot = if (shipShotHit) null else shipShot
@@ -75,7 +75,7 @@ data class Game(
         }
 
         // verifica se algum dos disparos restantes dos aliens atingiu a nave
-        val isHitByAlien = remainingAlienShots.any { it.hitsShip(ship) }
+        val isHitByAlien = remainingAlienShots.filter { it.hitsShip(ship) }.isNotEmpty()
 
         return copy(
             alienShots = remainingAlienShots,

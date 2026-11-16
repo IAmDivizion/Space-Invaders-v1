@@ -104,7 +104,7 @@ fun main() {
 
         // disparo da nave com espaco
         arena.onKeyPressed { key ->
-            if (key.char == ' ') {
+            if (key.code == 32) {
                 game = game.shoot()
             }
         }
